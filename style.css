@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    box-sizing: border-box;
+    text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.2);
+}
+img {
+    max-height: 6em;
+    width: 100%;
+    height: 100%;
+}
+input{
+    accent-color: rgb(217,3,104,.5);
+}
+div h4 {
+    margin-right: 2em;
+}
+
+
+img.Logo {
+    height: 3em;
+    flex-wrap: wrap;
+}
+
+.personalNav {
+    background-color: rgb(217,3,104,.1) !important;}
+.nav-link {     
+    border: 1px solid black;
+    background-color: white;
+    text-align: center;
+    transition: .4s;
+}
+.nav-link:hover {     
+    background-color: rgb(217,3,104,.5);
+    border: 1px solid rgb(217,3,104,.5);
+}
+
+.container-md{
+    background-color: rgb(217,3,104,.4);
+    padding: .5em !important;
+    border: 1px solid rgb(217,3,104,.5) !important;
+    align-items: center;
+}
+.container-sm{
+    background-color: rgb(217,3,104,.05) !important;
+    border: 1px solid rgb(217,3,104,.5) !important;
+    align-items: center;
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    filter: invert(100%);
+    height: 100%;
+    align-self: center;
+}
+.carousel-control-prev-icon:hover, .carousel-control-next-icon:hover {
+    filter: invert(10%) !important;
+    
+    transition: .2s;
+}
+
+.btn {
+    background-color: rgb(217, 3, 104) !important;
+    border: 1px solid black !important;
+    color: white !important;
+}
+.btn:hover {
+    background-color: rgb(255, 182, 217) !important;
+    filter: drop-shadow(1px 2px 2px rgb(217,3,104,.8));
+    color: rgb(0, 0, 0,.6) !important;
+    transition: .2s;
+}
+
+
+.card-footer {
+    background-color: rgb(217,3,104,.3) !important;
+}
+.card-body {
+    background-color: rgb(217,3,104,.1) !important;
+}
+.card {
+    border: 1px solid rgb(217,3,104,.5) !important;
+}
+.card-group{
+    padding: 1em;
+}
+.config {
+    width: 2em;
+}
+
+@media (max-width: 600px) {
+
+img {
+        max-height: auto;
+    }
+
+}

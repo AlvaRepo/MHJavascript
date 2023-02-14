@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">    <title>Home</title>
+    <link rel="shortcut icon" href="./imgs/favicon.ico">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg personalNav container-md flex-row-reverse justify-content-md-around">
+                <a class="navbar-brand" href="./index.html"> 
+                <img src="./imgs/Logo.png" alt="Logo" class="d-inline-block align-text-top"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon "></span>
+                    </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav column-gap-2 col">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="./index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./upcoming-events.html">Upcoming Events</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Past Events</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="./stats.html">Stats</a>
+                    </li>
+                    </ul>
+            </div>
+        </nav>
+    </header>
+    <div class="container-md d-flex">
+                <a href="./upcoming-events.html" class="carousel-control-prev-icon">
+                </a>
+                <div class="container-fluid text-center">
+                    <h1>Past Events</h1>
+                </div>
+                <a href="./contact.html" class="carousel-control-next-icon"></a>
+            </div>
+
+    <div class="container-sm py-5">
+        <div class="d-flex flex-row py-2">
+            <div class="container-fluid mt-3 justify-content-start">
+                <span class="p-3">
+                    <input type="checkbox" name="position" id="Category" value="Movies">
+                    <span>Category</span>
+                </span>
+                <span class="p-3">
+                    <input type="checkbox" name="position" id="Categoryuno" value="Movies">
+                    <span>Category</span>
+                </span>
+                <span class="p-3">
+                    <input type="checkbox" name="position" id="Categorydos" value="Movies">
+                    <span>Category</span>
+                </span>
+                <span class="p-3">
+                    <input type="checkbox" name="position" id="Categorytres" value="Movies">
+                    <span>Category</span>
+                </span>
+                <span class="p-3">
+                    <input type="checkbox" name="position" id="Categorycuatro" value="Movies">
+                    <span>Category</span>
+                </span>
+            </div>
+            <div class="d-flex flex-row p-3">
+                <form class="d-flex" role="search">
+                    <input class="form-control me-3" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>      
+        <div class="card-group">
+            <div class="card">
+                <img src="./imgs/Food_Fair.jpg" class="card-img-top" alt="Food" height="200">
+                <div class="card-body">
+                    <h5 class="card-title">Food for you!</h5>
+                    <p class="card-text">The best expertice on the food market!</p>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted">
+                        Price: <strong> $333</strong>
+                        <a class="btn btn-primary btn-sm " href="./details.html" role="button">Details</a>                
+                    </small>
+                </div>
+            </div>  
+            <div class="card">
+                <img src="./imgs/Costume_Party.jpg" class="card-img-top" alt="Party" height="200">
+                <div class="card-body">
+                    <h5 class="card-title">We can Party!</h5>
+                    <p class="card-text">Of course that we know how to party!</p>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted">
+                        Price: <strong>$444</strong>
+                        <a class="btn btn-primary btn-sm " href="./details.html" role="button">Details</a>                
+                    </small>
+                </div>
+            </div>              
+            <div class="card">
+                <img src="./imgs/Cinema.jpg" class="card-img-top" alt="Cinema" height="200">
+                <div class="card-body">
+                    <h5 class="card-title">Best Movies!</h5>
+                    <p class="card-text">With our cinemas!</p>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted">
+                        Price: <strong>$444</strong>
+                        <a class="btn btn-primary btn-sm " href="./details.html" role="button">Details</a>                
+                    </small>
+                </div>
+            </div>  
+            <div class="card">
+                <img src="./imgs/Music_Concert.jpg" class="card-img-top" alt="Music" height="200">
+                <div class="card-body">
+                    <h5 class="card-title">Music!</h5>
+                    <p class="card-text">Bands just for you!</p>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted">
+                        Price: <strong>$444</strong>
+                        <a class="btn btn-primary btn-sm " href="./details.html" role="button">Details</a>                
+                    </small>
+                </div>
+            </div>  
+        </div>
+    </div>
+        <footer class="container-md d-flex justify-content-between ">
+            <div class="d-flex justify-content-around column-gap-3">
+                <img class="Logo" src="./imgs/igLogo.png" alt="Instagram">
+                <img class="Logo" src="./imgs/fbLogo.png" alt="Facebook">
+                <img class="Logo" src="./imgs/wpLogo.png" alt="Whatsapp">
+            </div>
+
+            <div>
+                <h4>Cohort</h4>
+            </div>
+        </footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
+    </body>
+</html>
