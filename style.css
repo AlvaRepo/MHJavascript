@@ -6,20 +6,29 @@
     box-sizing: border-box;
     text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.2);
 }
-.card > img {
-    
+.card > img.card-img-top {
     padding: 10px;
     width: 100%;
-    height: auto;
+    height: 250px;
 }
-
+span > label {
+    display: flex;
+    flex-direction: row;
+}
+span > label > div {
+    padding: .3em;
+}
 div h4 {
     margin-right: 2em;
 }
-
+h5 {
+    padding: 1em;
+}
 a > img {
     height: auto;
-    width: 100%;
+    width:100%;
+    max-width:500px !important;
+    min-width:300px !important;
 }
 img.Logo {
     height: 3em;
@@ -29,6 +38,9 @@ img.Logo {
     font-weight: bolder;
     font-size: larger;
 }
+.navbar{
+    overflow-x: hidden !important; 
+}
 .personalNav {
     background-color: rgb(217,3,104,.1) !important;}
 .nav-link {     
@@ -36,21 +48,22 @@ img.Logo {
     background-color: white;
     text-align: center;
     transition: .4s;
+    height: 100% !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
 }
 .nav-link:hover {     
     background-color: rgb(217,3,104,.5);
     border: 1px solid rgb(217,3,104,.5);
 }
 
-.container-md{
+.personalSlider{
     background-color: rgb(217,3,104,.4);
-    padding: .5em !important;
-    border: 1px solid rgb(217,3,104,.5) !important;
     align-items: center;
 }
-.container-sm{
+.personalBody{
     background-color: rgb(217,3,104,.05) !important;
-    border: 1px solid rgb(217,3,104,.5) !important;
     align-items: center;
 }
 
@@ -64,22 +77,17 @@ img.Logo {
     
     transition: .2s;
 }
-
 .btn {
-    background-color: rgb(217, 3, 104) !important;
-    border: 1px solid black !important;
-    color: white !important;
+    background-color: white !important;
 }
 .btn:hover {
-    background-color: rgb(255, 182, 217) !important;
+    color: white!important;
     filter: drop-shadow(1px 2px 2px rgb(217,3,104,.8));
-    color: rgb(0, 0, 0,.6) !important;
+    background-color: rgb(217, 3, 104) !important;
     transition: .2s;
 }
-
-
 .card-footer {
-    background-color: rgb(217,3,104,.3) !important;
+    border-top: 1.5px solid rgb(217,3,104,.5) !important;
 }
 .card-body {
     background-color: rgba(255, 255, 255, 0.5) !important;
@@ -87,17 +95,7 @@ img.Logo {
 }
 .card {
     background-color: rgb(217,3,104,.1) !important;
-    border: 1px solid rgb(217,3,104,.5) !important;
-}
-
-.config {
-    width: 2em;
-}
-
-@media (max-width: 600px) {
-
-img {
-        max-height: auto;
-    }
-
+    border: 1.5px solid rgb(217,3,104,.5) !important;
+    margin: .8em !important;
+    width: 24em !important;
 }

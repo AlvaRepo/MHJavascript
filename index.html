@@ -11,12 +11,13 @@
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg personalNav container-md flex-row-reverse justify-content-md-around">
-                <a class="navbar-brand" href="./index.html"> 
-                <img src="./imgs/Logo.png" alt="Logo" class="d-inline-block align-text-top"></a>
+        <nav class="navbar navbar-expand-md  personalNav ">
+                <a class="navbar-brand w-50" href="./index.html"> 
+                    <img src="./imgs/Logo.png" alt="Logo" class="img-fluid p-3">
+                </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon "></span>
-                    </button>
+                    <span class="navbar-toggler-icon "></span>
+                </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav column-gap-2 col">
                     <li class="nav-item">
@@ -38,40 +39,37 @@
             </div>
         </nav>
     </header>
-    <div class="container-md d-flex">
+    <div class="d-flex personalSlider">
                 <a href="#" class="carousel-control-prev-icon">
                 </a>
-                <div class="container-fluid text-center">
+                <div class="container-fluid text-center md-0">
                     <h1>Home</h1>
                 </div>
                 <a href="./upcoming-events.html" class="carousel-control-next-icon">
                 </a>
-
             </div>
-
-            <div class="container-sm py-5">
-                <div class="d-flex">
-                    <div id="categorias" class="row row-cols-1 row-cols-md-2 row-cols-lg-3">
-                        <span class="row">
-                            Filter by category
-                        </span>
+            <div class="personalBody">
+                <div class="d-flex justify-content-center">
+                    <div id="categorias" class="row row-cols-1 row-cols-md-3 col-cols-lg-3 justify-content-center">
+                        <div class="w-100 mx-md-2 text-center">
+                            <h5>Filter by category</h5>
+                        </div>
                     </div>
         
                 </div>    
                 <div class="d-flex flex-row p-3">
-                    <form class="d-flex" role="search">
-                        <input id = "searchMach" class="form-control me-3" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn" type="submit">Search</button>
+                    <form class="w-100" role="search">
+                        <input id = "searchMach" class="form-control form-control-lg form-control-rounded" type="search" placeholder="Or write something to search for. =]" aria-label="Search">
                     </form>
                 </div>  
                 <div class="container-fluid">
-            <div id="contenedorEventos" class="row row-cols-1 row-cols-md-2 row-cols-lg-3">
+            <div id="contenedorEventos" class="row row-cols-1 row-cols-md-2 row-cols-lg-4 mx-sm-auto justify-content-around">
                 
             </div>
         </div>
     </div>
-        <footer class="container-md d-flex justify-content-between ">
-            <div class="d-flex justify-content-around column-gap-3">
+        <footer class="personalSlider d-flex justify-content-between ">
+            <div class="d-flex justify-content-around column-gap-3 p-3">
                 <img class="Logo" src="./imgs/igLogo.png" alt="Instagram">
                 <img class="Logo" src="./imgs/fbLogo.png" alt="Facebook">
                 <img class="Logo" src="./imgs/wpLogo.png" alt="Whatsapp">

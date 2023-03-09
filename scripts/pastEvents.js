@@ -11,22 +11,7 @@ eventsContainer.appendChild(message);
 message.style.display = 'none';
 
 //creo las categorías
-for (let evento of data.events) {
-    if (!categories.includes(evento.category)){
-    let span = document.createElement('span')
-    span.classList.add('p-1');
-    span.classList.add('row');
-    categories.push(evento.category);
-    span.innerHTML = `
-    <label class="container-fluid">
-        <input type='checkbox')" id='${evento.category}'>
-        <div>${evento.category}</div>
-    </label>`
-    divCategories.appendChild(span);
-    
-    span.classList.add('p-3')
-    }
-}
+createCategories (data, categories, divCategories)
 
 //recorro con un ciclo for la DDBB
 for (const event of data.events) { 

@@ -1,4 +1,21 @@
 
+//Crea Categorías 
+function createCategories (data, categories, divCategories){
+    for (let evento of data.events) {
+        if (!categories.includes(evento.category)){
+        let span = document.createElement('span')
+        span.classList.add('row');
+        categories.push(evento.category);
+        span.innerHTML = `
+        <label class="checkboxesDiv mx-md-2">
+            <input type='checkbox')" id='${evento.category}'>
+            <div>${evento.category}</div>
+        </label>`
+        divCategories.appendChild(span);
+        
+        }
+    }
+}
 //Crea tarjeta
 const createCard = (card, div) => {
     // Creo la imágen
@@ -17,11 +34,9 @@ const createCard = (card, div) => {
     description.classList.add("card-text");
     description.classList.add("card-body");
     const cardFooter = document.createElement("div");
-    cardFooter.textContent = ("Price: \n");
     const cardPrice = document.createElement("div");
-    cardPrice.classList.add("row");
     cardPrice.classList.add("pricePrin");
-    cardPrice.textContent = card.price;
+    cardPrice.textContent = ("Price: ") + card.price;
     const cardButton = document.createElement("a");
     cardButton.href = "./details.html?id="+card._id;
     cardButton.textContent = ("Details");
@@ -29,7 +44,7 @@ const createCard = (card, div) => {
     cardFooter.appendChild(cardButton);
     cardButton.classList.add("btn");
     cardFooter.classList.add("card-footer");
-    cardFooter.classList.add("d-flex");
+    cardFooter.classList.add("flex-row-reverse");
     cardFooter.classList.add("row");
     //Agrego los elementos ordenados
     div.appendChild(image);
@@ -61,26 +76,23 @@ function filtrar() {
         
         
     }
-    );messageHidden();
+    )
+    messageHidden(eventsContainer);
 }
 // Muestra el mensaje de que modifique los términos de búsqueda
-function messageHidden () {
+function messageHidden (eventsContainer) {
     let eventos = eventsContainer.children;
-    let contar = 0;
-    for (let i = 0; i < eventos.length; i++) {
-        let elemento = eventos[i];
-        if (elemento.style.display == "none") {
-            contar++;
-            console.log("itero")
-        } 
+    let tieneElementos = false;
+    let i = 1;
+    while (!tieneElementos && i < eventos.length){
+        if (eventsContainer.children[i].style.display == 'block'){
+            tieneElementos = true;
+        };
+        i++
     }
-    if (eventos.length === contar) {
+    if (!tieneElementos) {
         message.style.display = 'block';
-
     } else {
         message.style.display = 'none';
-
     }
-    
-    
 }

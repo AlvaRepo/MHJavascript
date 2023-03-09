@@ -5,10 +5,10 @@ const tarjeta = data.events.find( card => card._id == id)
 const div = document.querySelector ("#contenedor")
 console.log(id)
 div.innerHTML = `
-<div class="card p-3">
-    <img src="${tarjeta.image}" class="card-img-top" alt= "${tarjeta.category}">
-    <h5 class= "content-fluid">${tarjeta.name}</h5>
-    <div class = "card-body card-text row">
+<div class="card p-4">
+    <img src="${tarjeta.image}" class="img-fluid" alt= "${tarjeta.category}">
+    <h5 class= "content-fluid p-3 text-center">${tarjeta.name}</h5>
+    <div class = "d-flex row card-body ">
         <p><strong>Date:</strong> ${tarjeta.date}</p>
         <p><strong>Description:</strong> ${tarjeta.description}</p>
         <p><strong>Category:</strong> ${tarjeta.category}</p>
