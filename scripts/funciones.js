@@ -18,6 +18,7 @@ async function getData(){
         askDate(currentDate, event, eventsContainer, url);
     }
     console.log("se crearon las cards");
+    return data;
     } catch {
     console.log('No se pudo traer la data')
     }
