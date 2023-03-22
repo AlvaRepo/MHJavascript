@@ -3,7 +3,6 @@ const params = new URLSearchParams(queryString);
 const id = params.get('id');
 const tarjeta = data.events.find( card => card._id == id)
 const div = document.querySelector ("#contenedor")
-console.log(id)
 div.innerHTML = `
 <div class="card p-4">
     <img src="${tarjeta.image}" class="img-fluid" alt= "${tarjeta.category}">
