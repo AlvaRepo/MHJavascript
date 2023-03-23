@@ -114,7 +114,7 @@ function filtrar() {
     elementosFiltrados.forEach(elemento => {
         let nombre = elemento.innerHTML.replace(/<[^>]*>/g, '').toLowerCase(); //use la expresión regular que elimina las etiquetas de html. Agregué el "g" para que elimine de toda la cadena de texto (me daba el error que al buscar sin este filtro tomaba los "<>" y los "div")
         let categoria = elemento.dataset.filter;
-        if ((nombre.includes(searchInput.value) || searchInput.value.toLowerCase() === '') && (categoriasSeleccionadas.length === 0 || categoriasSeleccionadas.includes(categoria))) {
+        if ((nombre.includes(searchInput.value.toLowerCase()) || searchInput.value.toLowerCase() === '') && (categoriasSeleccionadas.length === 0 || categoriasSeleccionadas.includes(categoria))) {
             elemento.style.display = 'block';
         }else {
             elemento.style.display = 'none';
